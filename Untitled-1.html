@@ -256,8 +256,8 @@
 		})
 
 		document.querySelector('.slider-next').addEventListener('click', function(){
-		offset += 850;
-		if (offset>5000){
+		offset += 680;
+		if (offset>3740){
 			offset=0;
 		}
 		sliderLine.style.left= -offset + 'px'	
@@ -265,11 +265,10 @@
 
 		
 		document.querySelector('.slider-prev').addEventListener('click', function(){
-		offset -= 850;
-		if (offset<0){
-			offset=-4000;
-		}
-		sliderLine.style.left= offset + 'px'	
+		offset -= 680;
+		if (offset<0)
+		offset=3740;
+		sliderLine.style.left= -offset + 'px'	
 		})
 	</script>
 </body>
