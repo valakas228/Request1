@@ -6,7 +6,7 @@ body{margin:0; padding:0;
 *:after{box-sizing:border-box}
 .wrapper{overflow:hidden; display:flex;flex-direction:column; min-height:100vh;}
 .header{border-bottom: 1px solid #f0f0f0;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: rgb(240, 240, 240);right:0; left:0;}
-.header-inner{width: 1000px; margin: auto;}
+.header-inner{width: 1300px; margin: auto; display: flex;}
 .main{width:100%; height:100%;min-height: 100%;}
 .footer{width:100%;margin-top:auto;border:1px solid #dddddd;padding: 0;}
 .footer-middle{width: 100%; height: 40px; background-color: #3aa51a;}
@@ -22,8 +22,8 @@ body{margin:0; padding:0;
 .wrapper-inner ul li{display: inline;}
 .wrapper-inner ul {margin: 14px auto;}
 .header a{font-size:14px;margin-left:20px;text-align: center;}
-.logo{margin-left:350px;margin-top:30px; width: 250px;min-height: 61px;line-height: 61px;}
-.menu{margin-left:40vw;top:50px;margin-bottom: 100px; position: absolute;}
+.logo{margin-top:30px; width: 250px;min-height: 61px;line-height: 61px; margin-left:150px;}
+.menu{top:50px;margin-bottom: 100px; position: relative; margin-left:100px;}
 .header a:hover{   color:#3aa51a;   cursor: pointer;}
 .content-main-block{display: flex;max-width: 1000px;margin: 10px auto; height: 308px;  justify-content: center;}
 .content-main-block-name{margin-left:20px; margin-top:20px;}
@@ -31,12 +31,12 @@ body{margin:0; padding:0;
 .content-main-block-price{margin-left:20px; margin-top: 20px;}
 .content-main-block-price a{font-size:32px; font-weight: bold;}
 .content-main-block-moreabout a{font-size:22px;line-height: 35px;}
-.blocks{max-width: 1300px; margin: 10px auto;position: relative;}
-.block1{width: 260px;  } 
-.block2{width: 260px; }
-.block3{width: 260px; }
-.block4{width: 260px; }
-.block5{width: 260px; }
+.blocks{max-width: 1000px; margin: 10px auto;position: relative;}
+.block1{width: 200px;  } 
+.block2{width: 200px; }
+.block3{width: 200px; }
+.block4{width: 200px; }
+.block5{width: 200px; }
 .block1-img{max-width: 199px;}
 .blocks{display: flex;}
 .blocks a{    color: #3aa51a;}

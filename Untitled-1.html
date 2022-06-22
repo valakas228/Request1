@@ -13,9 +13,11 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
+			<div class="header-inner">
 			<div class="logo"><img src="logo.png"></div>
 			<div class="menu"><a>КАТАЛОГ</a><a>АКЦИИ</a><a>НОВОСТИ</a><a>УСЛУГИ</a><a>КОНТАКТЫ</a><a>О
 					КОМПАНИИ</a><a>ПОМОЩЬ</a></div>
+			</div>
 		</header>
 		<main class="main">
 			<div class="content-main-block">
@@ -256,8 +258,8 @@
 		})
 
 		document.querySelector('.slider-next').addEventListener('click', function(){
-		offset += 680;
-		if (offset>3740){
+		offset += 850;
+		if (offset>4250){
 			offset=0;
 		}
 		sliderLine.style.left= -offset + 'px'	
@@ -265,9 +267,10 @@
 
 		
 		document.querySelector('.slider-prev').addEventListener('click', function(){
-		offset -= 680;
-		if (offset<0)
-		offset=3740;
+		offset -= 850;
+		if (offset<0){
+			offset=4250;
+		}
 		sliderLine.style.left= -offset + 'px'	
 		})
 	</script>
