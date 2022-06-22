@@ -1,42 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+	<title>Document</title>
 </head>
+
 <body>
-    <header class="header"> 
-        <img class="logo" src="logo.png"><div class="menu"><a>КАТАЛОГ</a><a>АКЦИИ</a><a>НОВОСТИ</a><a>УСЛУГИ</a><a>КОНТАКТЫ</a><a>О КОМПАНИИ</a><a>ПОМОЩЬ</a></div>
-    </header>
-    <div class="wrapper">
-    <main class="main">
-        <div class="content-main-block"><div><div class="content-main-block-name"><a href="">Фотоаппарат Fujifilm X-S10 Body Black</a></div>
-        <div class="content-main-block-price"><A>101 990 руб.
-        </A></div>
-        <button class="content-main-block-moreabout"><a>Подробнее</a></button></div>
-        <div class="content-main-block-moreabout-img"><img src="1.jpeg"> </div>  
-    </div>
-    <div class="blocks">
-        <div class="block1"><img class="block1-img" src="1.jpeg"><div class="block1-title"><a>Фотоаппарат Fujifilm X-S10 Body Black</a></div><BR><b>101 990 руб</b><br><button onclick="(document.getElementById('block1-more').style.display='block')">Подробнее</button><div id="block1-more">Камера получила XTrans CMOS 4 с разрешением 26,1Мп, высокоскоростной процессор обработки изображений X-Processor 4 и встроенный механизм стабилизации изображений (IBIS).
-            Вес и габариты встроенного механизма стабилизации изображения (IBIS) приблизительно на 30 % меньше своего аналога из предыдущей модели.
-            При этом несмотря на наличие системы IBIS вес камеры составляет 450 грамм. Камера X-S10 обеспечивает 5-осевую стабилизацию изображения с эффективностью до 6 стопов.</div></div>
-        <div class="block2"><img class="block2-img"src="2.png"><div class="block2-title"><a>Стабилизатор Zhiyun Smooth 5 Combo Kit</a></div><br><b>21 990 руб.</b><br><button onclick="(document.getElementById('block2-more').style.display='block')">Подробнее</button><div id="block2-more">Компания Zhiyun представляет профессиональный стабилизатор для смартфонов, продолжающий успех серии SMOOTH, которая получила признание у видеографов по всему миру. Zhiyun Smooth 5 отличается высокой грузоподъемностью и способен работать с тяжелыми смартфонами, на которые установлены различные аксессуары (например, конверсионные насадки или небольшие микрофоны), а также обладает возможностью подключения светодиодных источников света на магнитном креплении.
+	<div class="wrapper">
+		<header class="header">
+			<div class="logo"><img src="logo.png"></div>
+			<div class="menu"><a>КАТАЛОГ</a><a>АКЦИИ</a><a>НОВОСТИ</a><a>УСЛУГИ</a><a>КОНТАКТЫ</a><a>О
+					КОМПАНИИ</a><a>ПОМОЩЬ</a></div>
+		</header>
+		<main class="main">
+			<div class="content-main-block">
+				<div>
+					<div class="content-main-block-name"><a href="">Фотоаппарат Fujifilm X-S10 Body Black</a></div>
+					<div class="content-main-block-price"><A>101 990 руб.
+						</A></div>
+					<button class="content-main-block-moreabout"><a>Подробнее</a></button>
+				</div>
+				<div class="content-main-block-moreabout-img"><img src="1.jpeg"> </div>
+			</div>
+			<div class="shadow-img"><img src="shadow_bottom.png"></div>
+			<div class="blocks">
+				<div class="block1"><img class="block1-img" src="1.jpeg" style="width: 170px; height: 170px;">
+					<div class="block1-title"><a>Фотоаппарат Fujifilm X-S10 Body Black</a></div><BR><b>101 990
+						руб</b><br><button id='button1'>Подробнее</button>
+					<div id="block1-more">Камера получила XTrans CMOS 4 с разрешением 26,1Мп, высокоскоростной процессор
+						обработки изображений X-Processor 4 и встроенный механизм стабилизации изображений (IBIS).
+						Вес и габариты встроенного механизма стабилизации изображения (IBIS) приблизительно на 30 %
+						меньше своего аналога из предыдущей модели.
+						При этом несмотря на наличие системы IBIS вес камеры составляет 450 грамм. Камера X-S10
+						обеспечивает 5-осевую стабилизацию изображения с эффективностью до 6 стопов.</div>
+				</div>
+				<div class="block2"><img class="block2-img" src="2.png">
+					<div class="block2-title"><a>Стабилизатор Zhiyun Smooth 5 Combo Kit</a></div><br><b>21 990
+						руб.</b><br><button id='button2'>Подробнее</button>
+					<div id="block2-more">Компания Zhiyun представляет профессиональный стабилизатор для смартфонов,
+						продолжающий успех серии SMOOTH, которая получила признание у видеографов по всему миру. Zhiyun
+						Smooth 5 отличается высокой грузоподъемностью и способен работать с тяжелыми смартфонами, на
+						которые установлены различные аксессуары (например, конверсионные насадки или небольшие
+						микрофоны), а также обладает возможностью подключения светодиодных источников света на магнитном
+						креплении.
 
-            Размеры меньше, грузоподъемность выше
-            Обновленные моторы и алгоритмы их поведения обеспечивают комфортную работу стабилизатора с тяжелыми смартфонами с установленными на них аксессуарами.</div></div>
-        <div class="block3"><img class="block2-img"src="3.jpeg"><div class="block3-title"><a>Сумка универсальная Manfrotto Street Convertible Tote Bag</a><br><b>13 190 руб.</b><br><button onclick="(document.getElementById('block3-more').style.display='block')">Подробнее</button><div id="block3-more">Сумка - трансформер Manfrotto Street - это универсальное решение для хранения и переноски камеры, ноутбука и личных вещей, которое при необходимости легко превращается в рюкзак. С легкостью вытяните два скрытых плечевых ремня в специальном заднем кармане и прикрепите их к прочным застежкам. Плечевые ремни имеют мягкую подкладку и регулируются для обеспечения комфорта.
+						Размеры меньше, грузоподъемность выше
+						Обновленные моторы и алгоритмы их поведения обеспечивают комфортную работу стабилизатора с
+						тяжелыми смартфонами с установленными на них аксессуарами.</div>
+				</div>
+				<div class="block3"><img class="block2-img" src="3.jpeg">
+					<div class="block3-title"><a>Сумка универсальная Manfrotto Street Convertible Tote Bag</a><br><b>13
+							190 руб.</b><br><button id='button3'>Подробнее</button>
+						<div id="block3-more">Сумка - трансформер Manfrotto Street - это универсальное решение для
+							хранения и переноски камеры, ноутбука и личных вещей, которое при необходимости легко
+							превращается в рюкзак. С легкостью вытяните два скрытых плечевых ремня в специальном заднем
+							кармане и прикрепите их к прочным застежкам. Плечевые ремни имеют мягкую подкладку и
+							регулируются для обеспечения комфорта.
 
-            Сумка имеет просторный доступ в верхнее отделение для организации личных вещей. Мягкий вкладыш для 14 –дюймового ноутбука, расположенный внутри основного отделения. Быстрый доступ к технике обеспечен в нижней части сумки. Это отделение вмещает беззеркальную камеру с объективом и 1-2 дополнительных средних объектива или комплект для видеоблога.</div></div></div>
-        <div class="block4"><img class="block2-img"src="4.jpeg"><div class="block4-title"><a>Рюкзак Manfrotto PRO Light Backloader M</a></div><br><b>21 990 руб.</b><br><button onclick="(document.getElementById('block4-more').style.display='block')">Подробнее</button><div id="block4-more">Рюкзак Manfrotto PRO Light Backloader M разработан для обеспечения высокого уровня безопасности  оборудования профессионального фотографа или видеографа.
-            В рюкзаках PRO Light применена новая система защиты M-Guard ™, которая была разработана и протестирована в лабораторных условиях, чтобы гарантировать высочайший уровень защиты и поглощения ударов в тех областях контакта, где это особенно важно. Разделители M-Guard™ изготовлены из вспененного этилвинилацетата высокой плотности (EVA), который обеспечивает исключительно высокий уровень поглощения ударов и при этом отличается компактностью. А возможность перестановки перегородок  поможет оптимально использовать внутреннее пространство. Кроме того, использование в основе рюкзака вспененного материала  SAS-TEC  с эффектом памяти и стойкостью к ударам обеспечивает дополнительные амортизирующие свойства. Для большей беззаботности предусмотрен  замок стандарта TSA.</div></div>
-        <div class="block5"><img class="block2-img"src="5.png"><div class="block5-title"><A>Стабилизатор Zhiyun Weebill 2 Combo</A></div><br><b>56449 руб.</b><br><button onclick="(document.getElementById('block5-more').style.display='block')" >Подробнее</button><div id="block5-more">Cтабилизатор с малым временем отклика, совершенно новым сенсорным экраном и умными алгоритмами работы. Стабилизатор WEEBILL 2 облегчает для пользователей съемку видеофильмов благодаря своей классической конструкции, мощному процессору Infineon, улучшенным алгоритмам работы и новому подходу к передаче изображения.</div></div>
-    </div>
-</div>
-    </main>
-    <footer class="footer"></footer>
+							Сумка имеет просторный доступ в верхнее отделение для организации личных вещей. Мягкий
+							вкладыш для 14 –дюймового ноутбука, расположенный внутри основного отделения. Быстрый доступ
+							к технике обеспечен в нижней части сумки. Это отделение вмещает беззеркальную камеру с
+							объективом и 1-2 дополнительных средних объектива или комплект для видеоблога.</div>
+					</div>
+				</div>
+				<div class="block4"><img class="block2-img" src="4.jpeg">
+					<div class="block4-title"><a>Рюкзак Manfrotto PRO Light Backloader M</a></div><br><b>21 990
+						руб.</b><br><button id='button4'>Подробнее</button>
+					<div id="block4-more">Рюкзак Manfrotto PRO Light Backloader M разработан для обеспечения высокого
+						уровня безопасности оборудования профессионального фотографа или видеографа.
+						В рюкзаках PRO Light применена новая система защиты M-Guard ™, которая была разработана и
+						протестирована в лабораторных условиях, чтобы гарантировать высочайший уровень защиты и
+						поглощения ударов в тех областях контакта, где это особенно важно. Разделители M-Guard™
+						изготовлены из вспененного этилвинилацетата высокой плотности (EVA), который обеспечивает
+						исключительно высокий уровень поглощения ударов и при этом отличается компактностью. А
+						возможность перестановки перегородок поможет оптимально использовать внутреннее пространство.
+						Кроме того, использование в основе рюкзака вспененного материала SAS-TEC с эффектом памяти и
+						стойкостью к ударам обеспечивает дополнительные амортизирующие свойства. Для большей
+						беззаботности предусмотрен замок стандарта TSA.</div>
+				</div>
+				<div class="block5"><img class="block2-img" src="5.png">
+					<div class="block5-title"><A>Стабилизатор Zhiyun Weebill 2 Combo</A></div><br><b>56449
+						руб.</b><br><button id='button5'>Подробнее</button>
+					<div id="block5-more">Cтабилизатор с малым временем отклика, совершенно новым сенсорным экраном и
+						умными алгоритмами работы. Стабилизатор WEEBILL 2 облегчает для пользователей съемку
+						видеофильмов благодаря своей классической конструкции, мощному процессору Infineon, улучшенным
+						алгоритмам работы и новому подходу к передаче изображения.</div>
+				</div>
+			</div>
+			<div class="info-column">
+				<div class='about-column'>
+					<h3><a href=''>О магазине</a></h3>
+					<p>«Лигафото» — специализированный магазин фототехники, видеотехники для любителей и профессионалов.
+						С 2008 года мы предлагаем широкий и актуальный ассортимент разнообразного оборудования:
+						фотокамеры, объективы, вспышки, оснащение для студийных и выездных съемок, сумки, рюкзаки и
+						чемоданы для техники, и весь спектр оригинальных и сторонних аксессуаров, необходимых фотографу
+						и видеографу.</p>
+					<p id='about_show_more_content'> В нашем магазине Вы можете приобрести сертифицированный,
+						официальный товар с гарантией производителя с доставкой по Москве или в любой регион России. Мы
+						принимаем наличные и безналичные платежи и основные виды банковских карт. У наших менеджеров вы
+						можете получить подробную консультацию по подбору оборудования. Мы продаем то, что действительно
+						нужно нашим покупателям. В «Лигафото» предлагаются программы беспроцентной рассрочки на ряд
+						товаров, трейд-ин – обмена старой техники на новую с доплатой, бесплатного тестирования новинок
+						фотоиндустрии. Мы постарались собрать в нашем магазине все самое нужно и полезное для фотографов
+						и видеографов. </p>
+					<p><div><a style='border-bottom:1px dotted green; color:green; font-size:12px;'
+							id='about-show-more'>Подробнее</a></div></p>
+				</div>
+				<div class='news-column'>
+					<h3><a href=''>Новости</a></h3>
+					<p>24 мая 2022
+						Canon EOS R7 - новый флагман APS-C с байонетом RF!
+						Сегодня, 24 мая 2022 компания Canon представила новую беззеркальную камеру EOS R7 с матрицей
+						APS-C и байонетом RF. До официального анонса в сети попадались спецификации разной степени
+						достоверности, но теперь о них известно официально.
+						15 июня 2022
+						Мощный светодиодный осветитель FIVERAY FR100C от компании Zhiyun
+						Компания Zhiyun является одной из ведущих в производстве различных аксессуаров для фото- и
+						видеосъемки. Сегодня Zhiyun представляет первый аксессуар для освещения — мощный светодиодный
+						источник света FIVERAY FR100C собственной разработки.
+						15 июня 2022
+						Zhiyun представляет новый стабилизатор WEEBILL 3 для фото- и видеокамер
+						Представленная новинка воплощает в себе новый дизайн удержания SLING 2.0, обновленную
+						эргономику, встроенный микрофон и источник света, а также способна обеспечить работу в течение
+						целого съемочного дня.
+						8 июня 2022
+						Новый универсальный и функциональный стабилизатор для смартфонов от Zhiyun!
+						Компания Zhiyun представила новый универсальный и функциональный стабилизатор для смартфонов
+						SMOOTH-Q4, продолжающий успех серии SMOOTH-Q, которая получила признание у видеографов по всему
+						миру.
+				</div>
+			</div>
+			<div class="shadow-img"><img src="shadow_bottom.png"></div>
+			<div class="slider-wrapper">
+				<div style="position:relative;"><img src="./imgs/free-icon-left-arrow-line-symbol-54321.png" style="width:50px; cursor: pointer;position: relative; top:30px;" class="slider-prev"></div>
+			<div class="slider">
+				<div class="slider-line">
+					<img src="./imgs/2222.jpg" alt=""><img src="./imgs/artpoint.jpg" alt=""><img src="./imgs/audio-technica.jpg" alt=""><img src="./imgs/BmR.jpg" alt=""><img src="./imgs/Delkin-Devices1.jpg" alt=""><img src="./imgs/formatt_hitech.png" alt=""><img src="./imgs/fujifilm.jpg" alt=""><img src="./imgs/gitzo.jpg" alt=""><img src="./imgs/gizmon.jpg" alt=""><img src="./imgs/Hasselblad.jpg" alt=""><img src="./imgs/hoya.jpg" alt=""><img src="./imgs/joby.jpg" alt=""><img src="./imgs/kenko.jpg" alt=""><img src="./imgs/lensbaby.jpg" alt=""><img src="./imgs/Ligafoto_CanonProPartner.jpg" alt=""><img src="./imgs/Ligafoto_NPD.jpg" alt=""><img src="./imgs/lowepro.jpg" alt=""><img src="./imgs/manfrotto.jpg" alt=""><img src="./imgs/ng.jpg" alt=""><img src="./imgs/Profoto.jpg" alt=""><img src="./imgs/rycote_logo.jpg" alt=""><img src="./imgs/Sanyo.jpg" alt=""><img src="./imgs/saramonic.jpg" alt=""><img src="./imgs/sightron.jpg" alt=""><img src="./imgs/Swarovski-Optik.jpg" alt=""><img src="./imgs/tamron-logo.jpg" alt=""><img src="./imgs/tokina.jpg" alt=""><img src="./imgs/zenit-logo.jpg" alt=""><img src="./imgs/Zhiyun.png" alt="">
+				</div>
+			</div>
+			<div style="position:relative;" ><img src="./imgs/free-icon-right-arrow-angle-54833.png" style="width:50px; cursor: pointer; position: absolute; top:30px;" class="slider-next"> </div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer-top">
+				<div class="form">
+					<div class="form-inner">
+						<div class="form1">
+							<p><span style="font-size:14px;">Узнайте о скидках первыми!</span></p>
+							<p><span style="font-size:14px;">Получайте информацию об акциях и спецпредложениях
+									"Лигафото" на электронную почту.</span></p>
+									<div class="fields">
+									<div class="field"><label class="input"></label>
+									<input type="email" style="padding:5px; border-radius: 5px;" placeholder="Ваш e-mail" class="sp-form">
+									</div>
+									<div class="field"><label class="input"></label>
+										<input style="padding:5px; border-radius: 5px;" type="text" placeholder="Ваш город" class="sp-form">
+										</div>
+										<div><button style="padding:5px; margin-right: 10px;">Подписаться</button></div>
+									</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-middle"><div class="middle-wrapper"><div class="bottom-main-menu">
+			<a><strong>НА ГЛАВНУЮ</strong></a>
+				<a><strong>КОМПАНИЯ</strong></a>
+				<a><strong>ИНФОРМАЦИЯ</strong></a>
+				<a><strong>ПОМОЩЬ</strong></a>
+				<a><strong>88005553535</strong></a>
+			</div></div></div>
+			<div class="footer-bottom"></div>
+		</footer>
+	</div>
+	<script>
+		var IsMenuShow = false;
+		var IsMenuShow2 = false;
+		var IsMenuShow3 = false;
+		var IsMenuShow4 = false;
+		var IsMenuShow5 = false;
+		var IsAboutMoreContentShown = false
+		let offset = 0;
+		const sliderLine = document.querySelector('.slider-line')
+
+		document.getElementById("button1").addEventListener("click", function () {
+			if (IsMenuShow) {
+				document.getElementById('block1-more').style.display = 'none'
+				IsMenuShow = false;
+			}
+			else {
+				document.getElementById('block1-more').style.display = 'block'
+				IsMenuShow = true;
+			}
+		});
+
+		document.getElementById('button2').addEventListener("click", function () {
+			if (IsMenuShow2) {
+				document.getElementById('block2-more').style.display = 'none'
+				IsMenuShow2 = false;
+			}
+			else {
+				document.getElementById('block2-more').style.display = 'block'
+				IsMenuShow2 = true;
+			}
+		})
+
+		document.getElementById('button3').addEventListener("click", function () {
+			if (IsMenuShow3) {
+				document.getElementById('block3-more').style.display = 'none'
+				IsMenuShow3 = false;
+			}
+			else {
+				document.getElementById('block3-more').style.display = 'block'
+				IsMenuShow3 = true;
+			}
+		})
+
+		document.getElementById('button4').addEventListener("click", function () {
+			if (IsMenuShow4) {
+				document.getElementById('block4-more').style.display = 'none'
+				document.getElementById('button4').style.border = '1px solid black'
+				IsMenuShow4 = false;
+			}
+			else {
+				document.getElementById('block4-more').style.display = 'block'
+				IsMenuShow4 = true;
+			}
+		})
+
+		document.getElementById('button5').addEventListener("click", function () {
+			if (IsMenuShow5) {
+				document.getElementById('block5-more').style.display = 'none'
+				IsMenuShow5 = false;
+			}
+			else {
+				document.getElementById('block5-more').style.display = 'block'
+				IsMenuShow5 = true;
+			}
+		})
+
+
+		document.getElementById('about-show-more').addEventListener("click", function () {
+			if (IsAboutMoreContentShown) {
+				document.getElementById('about_show_more_content').style.display = 'none';
+				IsAboutMoreContentShown = false
+			}
+			else {
+				document.getElementById('about_show_more_content').style.display = 'block';
+				IsAboutMoreContentShown = true;
+			}
+		})
+
+		document.querySelector('.slider-next').addEventListener('click', function(){
+		offset += 850;
+		if (offset>5000){
+			offset=0;
+		}
+		sliderLine.style.left= -offset + 'px'	
+		})
+
+		
+		document.querySelector('.slider-prev').addEventListener('click', function(){
+		offset -= 850;
+		if (offset<0){
+			offset=-4000;
+		}
+		sliderLine.style.left= offset + 'px'	
+		})
+	</script>
 </body>
+
 </html>
